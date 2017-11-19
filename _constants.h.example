@@ -1,3 +1,4 @@
 #define WIFI_SSID "<ssid>"
 #define WIFI_PASSWORD "<password>"
 #define MQTT_SERVER_IP "<mqtt broker ip>"
+#define MQTT_CHANNEL "<mqtt channel>"

@@ -97,11 +97,10 @@ void loop() {
     int i;
     for (i = 0; i < ssidCount; i++) {
       Serial.println(ssids[i]);
-      client.publish("WirelessAPs", ssids[i]);
+      client.publish(MQTT_CHANNEL, ssids[i]);
       delete [] ssids[i];
     }
     delete [] ssids;
     Serial.println();
   }
 }
-
